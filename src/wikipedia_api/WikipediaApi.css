@@ -1,0 +1,39 @@
+.SearchButton {
+    display: inline-block;
+    font-family: "Lucida Sans Unicode", Times New Roman;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: #1e94f4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.SearchButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.SearchButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.SearchButton:hover span {
+    padding-right: 25px;
+}
+
+.SearchButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
